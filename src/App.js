@@ -6,13 +6,13 @@ export default function App() {
   const [qty, setQty] = useState(1);
 
   const fetchOrders = () =>
-    fetch('/api/orders').then(r => r.json()).then(setOrders);
+    fetch('api/orders').then(r => r.json()).then(setOrders);
 
   useEffect(() => { fetchOrders(); }, []);
 
   const submit = async (e) => {
     e.preventDefault();
-    await fetch('/api/orders', {
+    await fetch('api/orders', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ item, quantity: Number(qty) }),
