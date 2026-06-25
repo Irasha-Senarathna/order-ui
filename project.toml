@@ -1,0 +1,11 @@
+ [[build.env]]
+    name = "BP_WEB_SERVER"
+    value = "nginx"   
+
+  [[build.env]]
+    name = "BP_WEB_SERVER_ROOT"
+    value = "build"
+
+  [[build.env]]
+    name = "BP_NGINX_CONF_LOCATION"
+    value = "nginx.conf"
