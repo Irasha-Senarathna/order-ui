@@ -127,7 +127,7 @@ export default function App() {
               onChange={e => setQty(e.target.value)}
               min={1}
             />
-            <button style={styles.button} type="submit">Place Order</button>
+            <button style={styles.button} type="submit">PPlace Order</button>
           </form>
 
           <div style={styles.countRow}>
